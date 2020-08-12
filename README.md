@@ -17,4 +17,6 @@ logger.init("Hello World!");
 logger.debug("Hello World!");
 ```
 
+---
+
 ![Example](https://raw.githubusercontent.com/CinePlays/logger/master/media/%40cineplays-logger.jpg)
