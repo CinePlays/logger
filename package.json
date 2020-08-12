@@ -1,0 +1,28 @@
+{
+  "name": "@cineplays/logger",
+  "version": "1.0.0",
+  "description": "Easy logger",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CinePlays/Logger.git"
+  },
+  "keywords": [
+    "log",
+    "logger",
+    "logs",
+    "coloured"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CinePlays/Logger/issues"
+  },
+  "homepage": "https://github.com/CinePlays/Logger#readme",
+  "dependencies": {
+    "chalk": "^4.1.0"
+  }
+}
