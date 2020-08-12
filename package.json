@@ -1,6 +1,6 @@
 {
   "name": "@cineplays/logger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Easy logger",
   "main": "index.js",
   "scripts": {
@@ -23,6 +23,10 @@
   },
   "homepage": "https://github.com/CinePlays/Logger#readme",
   "dependencies": {
-    "chalk": "^4.1.0"
+    "chalk": "^4.1.0",
+    "moment": "^2.27.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
