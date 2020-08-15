@@ -1,6 +1,6 @@
 {
    "name": "@cineplays/logger",
-   "version": "1.0.6",
+   "version": "1.0.7",
    "description": "Easy logger",
    "main": "index.js",
    "scripts": {
