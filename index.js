@@ -43,14 +43,14 @@ module.exports = {
          `${timestamp()} | ${chalk.black.bgCyanBright(" Debug ")} > ${content}`
       );
    },
-   class: class {
-      constructor(id = null) {
-         this._id = id ? chalk.black.bgGray(` ${id} `) : "";
+   node: class {
+      constructor(name = null) {
+         this._name = name ? chalk.black.bgWhite(` ${name} `) : "";
       }
 
       log(content) {
          console.log(
-            `${timestamp()} | ${this._id}${chalk.black.bgGray(
+            `${timestamp()} | ${this._name}${chalk.black.bgGray(
                " Log   "
             )} > ${content}`
          );
@@ -58,7 +58,7 @@ module.exports = {
 
       warn(content) {
          console.log(
-            `${timestamp()} | ${this._id}${chalk.black.bgYellow(
+            `${timestamp()} | ${this._name}${chalk.black.bgYellow(
                " Warn  "
             )} > ${content}`
          );
@@ -66,7 +66,7 @@ module.exports = {
 
       error(content) {
          console.log(
-            `${timestamp()} | ${this._id}${chalk.black.bgRed(
+            `${timestamp()} | ${this._name}${chalk.black.bgRed(
                " Error "
             )} > ${content}`
          );
@@ -74,7 +74,7 @@ module.exports = {
 
       info(content) {
          console.log(
-            `${timestamp()} | ${this._id}${chalk.black.bgGreenBright(
+            `${timestamp()} | ${this._name}${chalk.black.bgGreenBright(
                " Info  "
             )} > ${content}`
          );
@@ -82,7 +82,7 @@ module.exports = {
 
       init(content) {
          console.log(
-            `${timestamp()} | ${this._id}${chalk.black.bgMagentaBright(
+            `${timestamp()} | ${this._name}${chalk.black.bgMagentaBright(
                " Init  "
             )} > ${content}`
          );
@@ -90,7 +90,7 @@ module.exports = {
 
       debug(content) {
          console.log(
-            `${timestamp()} | ${this._id}${chalk.black.bgCyanBright(
+            `${timestamp()} | ${this._name}${chalk.black.bgCyanBright(
                " Debug "
             )} > ${content}`
          );
