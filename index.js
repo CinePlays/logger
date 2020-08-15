@@ -43,7 +43,7 @@ module.exports = {
          `${timestamp()} | ${chalk.black.bgCyanBright(" Debug ")} > ${content}`
       );
    },
-   node: class {
+   LogType: class {
       constructor(name = null) {
          this._name = name ? chalk.black.bgWhite(` ${name} `) : "";
       }

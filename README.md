@@ -19,13 +19,12 @@ logger.debug("Hello World!");
 
 ![Example](https://raw.githubusercontent.com/CinePlays/logger/master/media/%40cineplays-logger.jpg)
 
-# Adding ID / Name
+# Adding LogType
 
 ```js
 const Logger = require("@cineplays/logger");
-
 //You can set it to everything you want e.g. "1", "main",...
-const logger = new Logger.node("index.js");
+const logger = new Logger.LogType("index.js");
 
 logger.log("Hello World!");
 logger.warn("Hello World!");
