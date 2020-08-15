@@ -24,7 +24,7 @@ logger.debug("Hello World!");
 ```js
 const Logger = require("@cineplays/logger");
 
-//You can set it to every thing you want e.g. "1", "main",...
+//You can set it to everything you want e.g. "1", "main",...
 const logger = new Logger.node("index.js");
 
 logger.log("Hello World!");
