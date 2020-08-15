@@ -1,35 +1,32 @@
 {
-  "name": "@cineplays/logger",
-  "version": "1.0.5",
-  "description": "Easy logger",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CinePlays/Logger.git"
-  },
-  "keywords": [
-    "log",
-    "logger",
-    "logs",
-    "coloured"
-  ],
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/CinePlays/Logger/issues"
-  },
-  "homepage": "https://github.com/CinePlays/Logger#readme",
-  "dependencies": {
-    "chalk": "^4.1.0",
-    "moment": "^2.27.0"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "devDependencies": {
-    "jest": "^26.3.0"
-  }
+   "name": "@cineplays/logger",
+   "version": "1.0.5",
+   "description": "Easy logger",
+   "main": "index.js",
+   "scripts": {
+      "test": "jest"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/CinePlays/Logger.git"
+   },
+   "keywords": [
+      "log",
+      "logger",
+      "logs",
+      "coloured"
+   ],
+   "author": "",
+   "license": "MIT",
+   "bugs": {
+      "url": "https://github.com/CinePlays/Logger/issues"
+   },
+   "homepage": "https://github.com/CinePlays/Logger#readme",
+   "dependencies": {
+      "chalk": "^4.1.0",
+      "moment": "^2.27.0"
+   },
+   "publishConfig": {
+      "access": "public"
+   }
 }

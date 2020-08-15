@@ -2,31 +2,59 @@ const chalk = require("chalk");
 const moment = require("moment");
 
 function timestamp() {
-  return moment().format("YYYY-MM-DD HH:mm:ss");
+   return moment().format("YYYY-MM-DD HH:mm:ss");
 }
 
-module.exports = {
-  log: (content) => {
-    console.log(`${timestamp()} | ${chalk.black.bgGray(" Log   ")} > ${content}`);
-  },
+module.exports = class {
+   constructor(id = null) {
+      this._id = id ? chalk.black.bgGray(` ${id} `) : "";
+   }
 
-  warn: (content) => {
-    console.log(`${timestamp()} | ${chalk.black.bgYellow(" Warn  ")} > ${content}`);
-  },
+   log(content) {
+      console.log(
+         `${timestamp()} | ${this._id}${chalk.black.bgGray(
+            " Log   "
+         )} > ${content}`
+      );
+   }
 
-  error: (content) => {
-    console.log(`${timestamp()} | ${chalk.black.bgRed(" Error ")} > ${content}`);
-  },
+   warn(content) {
+      console.log(
+         `${timestamp()} | ${this._id}${chalk.black.bgYellow(
+            " Warn  "
+         )} > ${content}`
+      );
+   }
 
-  info: (content) => {
-    console.log(`${timestamp()} | ${chalk.black.bgGreenBright(" Info  ")} > ${content}`);
-  },
+   error(content) {
+      console.log(
+         `${timestamp()} | ${this._id}${chalk.black.bgRed(
+            " Error "
+         )} > ${content}`
+      );
+   }
 
-  init: (content) => {
-    console.log(`${timestamp()} | ${chalk.black.bgMagentaBright(" Init  ")} > ${content}`);
-  },
+   info(content) {
+      console.log(
+         `${timestamp()} | ${this._id}${chalk.black.bgGreenBright(
+            " Info  "
+         )} > ${content}`
+      );
+   }
 
-  debug: (content) => {
-    console.log(`${timestamp()} | ${chalk.black.bgCyanBright(" Debug ")} > ${content}`);
-  },
+   init(content) {
+      console.log(
+         `${timestamp()} | ${this._id}${chalk.black.bgMagentaBright(
+            " Init  "
+         )} > ${content}`
+      );
+   }
+
+   debug(content) {
+      console.log(
+         `${timestamp()} | ${this._id}${chalk.black.bgCyanBright(
+            " Debug "
+         )} > ${content}`
+      );
+   }
 };
